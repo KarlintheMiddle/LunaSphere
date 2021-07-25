@@ -1,0 +1,65 @@
+{
+    "contractName": "LunaSphere",
+    "abi": [],
+    "metadata": "{\"compiler\":{\"version\":\"0.4.22+commit.4cb486ee\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/Projects/GitHub/LunaSphere/contracts/LunaSphere.sol\":\"LunaSphere\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/Projects/GitHub/LunaSphere/contracts/LunaSphere.sol\":{\"keccak256\":\"0x42e7a6c7ec8e1187a5b78c752a97a3325ea6781a7b3fe3fede13e8c0980f0b0c\",\"urls\":[\"bzzr://08103adc2c61e000fa1bc55c8b9df686e0de02f3c2de7921faa7bf04901853bc\"]}},\"version\":1}",
+    "bytecode": "6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a72305820bb394fa34b9b7cf1e321a4c57828dc4f0ab1425e3597e80acb75bdb279b947010029",
+    "deployedBytecode": "6080604052600080fd00a165627a7a72305820bb394fa34b9b7cf1e321a4c57828dc4f0ab1425e3597e80acb75bdb279b947010029",
+    "sourceMap": "36:29:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;36:29:0;;;;;;;",
+    "deployedSourceMap": "36:29:0:-;;;;;",
+    "sourcePath": "d:/Projects/GitHub/LunaSphere/contracts/LunaSphere.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.4.22+commit.4cb486ee"
+    },
+    "ast": {
+        "absolutePath": "d:/Projects/GitHub/LunaSphere/contracts/LunaSphere.sol",
+        "exportedSymbols": {
+            "LunaSphere": [
+                2
+            ]
+        },
+        "id": 3,
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    ">=",
+                    "0.4",
+                    ".22",
+                    "<",
+                    "0.9",
+                    ".0"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "0:32:0"
+            },
+            {
+                "baseContracts": [],
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "documentation": null,
+                "fullyImplemented": true,
+                "id": 2,
+                "linearizedBaseContracts": [
+                    2
+                ],
+                "name": "LunaSphere",
+                "nodeType": "ContractDefinition",
+                "nodes": [],
+                "scope": 3,
+                "src": "36:29:0"
+            }
+        ],
+        "src": "0:65:0"
+    },
+    "functionHashes": {},
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "10600",
+            "executionCost": "66",
+            "totalCost": "10666"
+        }
+    }
+}
