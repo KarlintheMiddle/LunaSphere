@@ -1,0 +1,215 @@
+{
+  "contractName": "LunaSphereSale",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/Projects/GitHub/LunaSphere/contracts/LunaSphereSale.sol\":\"LunaSphereSale\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Projects/GitHub/LunaSphere/contracts/LunaSphereSale.sol\":{\"keccak256\":\"0x502f7623d746c19d33c43978f17517b0b67b0bf22967a0740509d97c1cac97aa\",\"urls\":[\"bzz-raw://48de7b5f1afcd8a734f15ca72f734a01df61ff22d252ea3910a550b112529109\",\"dweb:/ipfs/QmYdZsqTrJde5YuWm48U3RXDFHC1zGu98DiH6EZgM13uFA\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a7231582039c3a0d2c09fc1ac967550c2d1d06beb9c4b0cad84b7fb09d4b0c3aac09c8d2064736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a7231582039c3a0d2c09fc1ac967550c2d1d06beb9c4b0cad84b7fb09d4b0c3aac09c8d2064736f6c63430005100032",
+  "sourceMap": "36:79:0:-;;;73:39;8:9:-1;5:2;;;30:1;27;20:12;5:2;73:39:0;36:79;;;;;;",
+  "deployedSourceMap": "36:79:0:-;;;;;",
+  "source": "pragma solidity >=0.4.22 <0.9.0;\r\n\r\ncontract LunaSphereSale {\r\n    \r\n    constructor() public {\r\n        \r\n    }\r\n}",
+  "sourcePath": "D:/Projects/GitHub/LunaSphere/contracts/LunaSphereSale.sol",
+  "ast": {
+    "absolutePath": "/D/Projects/GitHub/LunaSphere/contracts/LunaSphereSale.sol",
+    "exportedSymbols": {
+      "LunaSphereSale": [
+        6
+      ]
+    },
+    "id": 7,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 6,
+        "linearizedBaseContracts": [
+          6
+        ],
+        "name": "LunaSphereSale",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 4,
+              "nodeType": "Block",
+              "src": "94:18:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 5,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "84:2:0"
+            },
+            "returnParameters": {
+              "id": 3,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "94:0:0"
+            },
+            "scope": 6,
+            "src": "73:39:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 7,
+        "src": "36:79:0"
+      }
+    ],
+    "src": "0:115:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/D/Projects/GitHub/LunaSphere/contracts/LunaSphereSale.sol",
+      "exportedSymbols": {
+        "LunaSphereSale": [
+          6
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:32:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            6
+          ],
+          "name": "LunaSphereSale",
+          "scope": 7
+        },
+        "children": [
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 6,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2,
+                "name": "ParameterList",
+                "src": "84:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 3,
+                "name": "ParameterList",
+                "src": "94:0:0"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4,
+                "name": "Block",
+                "src": "94:18:0"
+              }
+            ],
+            "id": 5,
+            "name": "FunctionDefinition",
+            "src": "73:39:0"
+          }
+        ],
+        "id": 6,
+        "name": "ContractDefinition",
+        "src": "36:79:0"
+      }
+    ],
+    "id": 7,
+    "name": "SourceUnit",
+    "src": "0:115:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-07-30T14:18:07.588Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
