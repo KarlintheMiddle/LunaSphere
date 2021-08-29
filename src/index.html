@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Luna Sphere</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // //Initialize Moralis
+      // Moralis.initialize("Zui8PUN4j9XzLudxaVhmRtOkFpYOw6QEAN5HgGWc");
+      // Moralis.serverURL = "https://qni07wc4t0vc.usemoralis.com:2053/server";
+    </script>
+  </head>
+
+  <body>
+    <div class="navigation" id="mynavigation">
+      <header class="headernav" id="headerid">
+        <nav class="navbar">
+          <a class="logo" href="">Luna Sphere</a>
+          <ul class="nav-menu" id="navMenu">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          </ul>
+          <div class="btn-holder">
+            <a href="#" class="btn" id="btnhide"
+              ><button id="hideEth" class="enableEth">Connect</button></a
+            >
+            <h2 id="hideAcc" class="hide">
+              <div class="dropdown">
+                <button id="showAcc" class="showAccount"></button>
+                <div id="addressDropdown" class="dropdown-content">
+                  <a href="#" class="logout">Log-out</a>
+                </div>
+              </div>
+            </h2>
+          </div>
+          <div class="hamburger-holder">
+            <div class="hamburger" id="hamburgerClick" onclick="myFunction()">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+    <div class="container">
+      <div class="body">
+        <div class="body-right">
+          <h1 class="glow">Luna Sphere Token</h1>
+          <br />
+          <p>Get out the way</p>
+          <br />
+          <div class="body-right-button">
+            <input type="text" value="0x42062922nog2nogasdasdwasd5346dfgj2" readonly ds />
+            <a href="#" class="body-right-btn"
+              ><button class="button-body">Buy on Pancake Swap</button></a
+            >
+          </div>
+        </div>
+        <div class="body-logo">
+          <img src="/img/lunasphere.png" alt="logo" />
+        </div>
+      </div>
+
+      <div class="body-2">
+        <div class="presale">
+          <h1 class="presale-title">Presale</h1>
+          <p>Date: September 09, 2021</p>
+          <p id="countdown"></p>
+        </div>
+        <div class="presale-info">
+          <div class="total-remaining">
+            <h1>10000000000 LNS remaining</h1>
+            <div class="progressbar">
+              <div id="myProgress">
+                <div id="myBar">100%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="balance-section">
+          <form class="buySection" action=""></form>
+            <div class="fromBNB">
+              <h1>From: BNB</h1>
+              <label class="showBNBBalances" for="inputBNB">Balance: </label>
+              <input type="number" name="inputBNB" id="inputBNB" class="inputBNB" />
+            </div>
+            <div class="toLNS">
+              <h1>To: LNS</h1>
+              <label class="showLNSBalances" for="inputLNS">Balance: </label>
+              <input type="number" name="inputLNS" id="inputLNS" class="inputLNS" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hamburger -->
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+      const navLink = document.querySelectorAll(".nav-link");
+      const btn = document.querySelectorAll(".cta");
+
+      hamburger.addEventListener("click", mobileMenu);
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+      function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+
+      function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      }
+    </script>
+
+    <script>
+      // const ethereumButton = document.querySelector(".enableEth");
+      // const showAccount = document.querySelector(".showAccount");
+
+      // ethereumButton.addEventListener("click", () => {
+      //   getAccount();
+      // });
+
+      // async function getAccount() {
+      //   var account;
+
+      //   Moralis.Web3.authenticate().then(function (user) {
+      //     console.log(user.get("ethAddress"));
+      //     account = user.get("ethAddress");
+      //     console.log("Running Authenticate");
+      //     showAccount.innerHTML = account;
+      //   });
+
+      //   document.getElementById("btnhide").classList.add("hide");
+      //   document.getElementById("hideAcc").classList.remove("hide");
+      //   document.getElementById("hideAcc").classList.add("show");
+      // }
+    </script>
+
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Sept 9, 2021 00:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("countdown").innerHTML =
+          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+
+    <script src="app.js"></script>
+  </body>
+</html>

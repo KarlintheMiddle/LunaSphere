@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap");
+
+body {
+  background: url(img/1.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER STYLE */
+header {
+  background-color: rgb(0, 0, 0);
+  border-bottom: 0.2px solid rgb(240, 0, 188);
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.glow {
+  color: #fff;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(7, 143, 255), 0 0 10px rgb(123, 196, 255),
+      0 0 15px #aa0055, 0 0 20px #aa0055, 0 0 25px #aa0055, 0 0 30x #aa0055,
+      0 0 35px #aa0055;
+  }
+
+  to {
+    text-shadow: 0 0 20px rgb(0, 140, 255), 0 0 10px #d6669e, 0 0 15px #d6669e,
+      0 0 20px #d6669e, 0 0 25px #d6669e, 0 0 30px #d6669e, 0 0 35px #d6669e;
+  }
+}
+
+li,
+a,
+button {
+  font-family: "Encode Sans SC", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 25px;
+  grid-column: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-menu {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 0px 30px;
+}
+
+.nav-link {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: rgb(158, 57, 184);
+}
+
+.btn-holder {
+  grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn-holder h2 {
+  font-family: "Encode Sans SC", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+button {
+  padding: 9px 20px;
+  background-color: rgba(158, 57, 184, 1);
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(158, 57, 184, 0.8);
+}
+.dropdown {
+  display: inline-block;
+  position: relative;
+  float: right;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(158, 57, 184);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+  border-radius: 10px;
+}
+
+.dropdown-content:hover {
+  background-color: rgba(126, 43, 146);
+}
+
+.dropdown-content a {
+  text-align: center;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  border-radius: 10px;
+}
+
+.dropdown-show {
+  display: block;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  border-radius: 1px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+/* BODY Style */
+.container {
+  padding: 10px;
+  padding-top: 0;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 5rem;
+  padding-top: 3rem;
+  box-sizing: border-box;
+  color: white;
+  height: 100vh;
+}
+
+.body * {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+}
+
+.body-right {
+  grid-column: 1;
+  grid-row: 2;
+  display: block;
+  text-align: left;
+  font-size: 32px;
+  color: rgb(255, 255, 255);
+}
+
+.body-right h1 {
+  border-bottom: 1px solid;
+  border-image: linear-gradient(
+    to right,
+    rgba(240, 0, 188, 1) 40%,
+    rgba(240, 0, 188, 0) 60%
+  );
+  border-image-slice: 1;
+}
+
+.body-logo {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-logo img {
+  height: 400px;
+}
+
+.button-body {
+  padding: 20px 50px;
+  background-color: rgba(158, 57, 184, 1);
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+}
+
+.button-body:hover {
+  background-color: rgba(158, 57, 184, 0.8);
+}
+
+.body-right-button input {
+  padding: 20px 50px;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 50px;
+  font-size: large;
+}
+
+/* Body 2 */
+.body-2 {
+  background: rgba(42, 64, 255, 0.1);
+  padding: 5rem;
+  border-radius: 50px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  height: 90vh;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 30% 70%;
+  gap: 10px;
+}
+.body-2 h1,
+p,
+label {
+  color: white;
+  font-family: "Encode Sans SC", sans-serif;
+  font-weight: 500;
+}
+.presale {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  text-align: center;
+}
+
+.presale p {
+  font-size: x-large;
+}
+
+.presale-title {
+  font-size: 5rem;
+}
+
+.balance-section {
+  background: #ff93db28;
+  border: #ff3097 2px solid;
+  grid-column: 3;
+  grid-row: 2;
+  border-radius: 15px;
+}
+
+.fromBNB {
+  padding: 3rem;
+}
+
+.toLNS {
+  padding: 3rem;
+}
+
+.balance-section input {
+  border-radius: 15px;
+  width: 100%;
+  padding: 20px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #4edcff73;
+  color: white;
+  font-size: large;
+}
+
+.balance-section label {
+  display: block;
+}
+
+.presale-info {
+  background: #ff93db28;
+  border: #d64eff 2px solid;
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  border-radius: 15px;
+}
+.total-remaining {
+  padding: 4rem;
+  text-align: center;
+}
+
+.progressbar {
+  padding-top: 2rem;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: #4e77ff9a;
+  border-radius: 15px;
+}
+
+#myBar {
+  width: 50%;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #4edcff;
+  text-align: center;
+  line-height: 30px;
+  color: no;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+@media screen and (max-width: 768px) {
+  li,
+  a,
+  button {
+    font-weight: 500;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+  }
+
+  .body-logo {
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+
+  .body-right {
+    grid-column: 1/3;
+    grid-row: 2;
+  }
+
+  .nav-menu {
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 4rem;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid rgb(87, 131, 123);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2rem 0;
+  }
+
+  .hamburger-holder {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .hamburger {
+    grid-column: 3;
+    display: block;
+    cursor: pointer;
+  }
+
+  .btn-holder {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  li,
+  a,
+  button {
+    font-weight: 500;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+  }
+
+  .container {
+    padding: 10px;
+    padding-top: 0;
+  }
+
+  .body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 5rem;
+    padding-top: 8rem;
+    box-sizing: border-box;
+    color: white;
+  }
+
+  .body * {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+  }
+
+  .body-right {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    display: block;
+    text-align: left;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    padding-top: 30px;
+  }
+
+  .body-right h1 {
+    border-bottom: 1px solid;
+    border-image: linear-gradient(
+      to right,
+      rgba(240, 0, 188, 1) 40%,
+      rgba(240, 0, 188, 0) 60%
+    );
+    border-image-slice: 1;
+  }
+
+  .body-logo {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .body-logo img {
+    height: 400px;
+  }
+
+  .button-body {
+    padding: 20px 50px;
+    background-color: rgba(158, 57, 184, 1);
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .button-body:hover {
+    background-color: rgba(158, 57, 184, 0.8);
+  }
+
+  .body-right-button input {
+    padding: 20px 50px;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-size: large;
+  }
+}

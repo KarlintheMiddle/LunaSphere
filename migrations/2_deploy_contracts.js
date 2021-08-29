@@ -1,5 +1,5 @@
-const LunaSphere = artifacts.require('LunaSphere')
+const LunaSphere = artifacts.require("LunaSphere");
 
 module.exports = function (deployer) {
-  deployer.deploy(LunaSphere)
-}
+  deployer.deploy(LunaSphere);
+};

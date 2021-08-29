@@ -1,4 +1,4 @@
-pragma solidity 0.5.16;
+pragma solidity >=0.4.22 <0.9.0;
 
 interface IBEP20 {
   /**
@@ -538,6 +538,11 @@ contract LunaSphere is Context, IBEP20, Pausable {
    */
   function mint(uint256 amount) public onlyOwner returns (bool) {
     _mint(_msgSender(), amount);
+    return true;
+  }
+
+  function burn(uint256 amount) public onlyOwner returns (bool) {
+    _burn(_msgSender(), amount);
     return true;
   }
 
